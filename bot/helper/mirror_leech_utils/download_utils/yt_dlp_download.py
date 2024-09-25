@@ -78,6 +78,8 @@ class YoutubeDLHelper:
                 "file_access": lambda n: 3,
                 "extractor": lambda n: 3,
             },
+            "fragment_retries": 5,  # Retry failed fragments 5 times
+            "max_fragments": 12,  # Limit to 12 fragments for download at a time
         }
 
     @property
